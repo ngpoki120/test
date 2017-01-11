@@ -7,10 +7,10 @@ class refactoring_test{
 
   private static void conditional(){
     int count = 0;
-    if(count == 0){
-      count = count + 2;
+    if(isCountZero(count)){
+      count = thenCount(count);
     }else{
-      count = count + 1;
+      count = elseCount(count);
     }
   }
 
